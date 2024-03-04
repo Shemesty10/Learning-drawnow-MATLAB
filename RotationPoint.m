@@ -1,11 +1,11 @@
-xx = 50;
+zxx = 50;
 yy = 0;
 
 rot = linspace(0,2*pi,250)
 scatter(xx,yy,"filled",'r');
 grid on 
-xlim([45-100 155-100])
-ylim([45-100 155-100])
+xlim([-55 55])
+ylim([-55 55])
 hold on
 scatter(0,0,"filled",'k');
 h = scatter(xx,yy,'filled','b');
