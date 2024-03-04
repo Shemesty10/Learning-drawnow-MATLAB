@@ -1,4 +1,4 @@
-zxx = 50;
+xx = 50;
 yy = 0;
 
 rot = linspace(0,2*pi,250)
