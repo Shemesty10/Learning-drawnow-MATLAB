@@ -1,18 +1,18 @@
-xx = 150;
-yy = 100;
+xx = 50;
+yy = 0;
 
-rot = linspace(0,2*pi,250);
+rot = linspace(0,2*pi,250)
 scatter(xx,yy,"filled",'r');
 grid on 
-xlim([45 155])
-ylim([45 155])
+xlim([45-100 155-100])
+ylim([45-100 155-100])
 hold on
-scatter(100,100,"filled",'k');
+scatter(0,0,"filled",'k');
 h = scatter(xx,yy,'filled','b');
 hold off 
 for inc = 1:length(rot)
-    xrot = (xx-100)*cos(rot(inc)) - (yy-100)*sin(rot(inc)) + 100;
-    yrot = (xx-100)*sin(rot(inc)) + (yy-100)*cos(rot(inc)) + 100;
+    xrot = (xx)*cos(rot(inc)) - (yy)*sin(rot(inc));
+    yrot = (xx)*sin(rot(inc)) + (yy)*cos(rot(inc));
     set(h,'XData',xrot,'YData',yrot);
     drawnow
 end
