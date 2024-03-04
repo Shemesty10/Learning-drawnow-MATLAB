@@ -16,8 +16,11 @@ The rotated point (blue point) plot is saved in a variable, named `h`, then to u
 ``` MATLAB
 set(variable,'properties1',value1,'properties2',value2);
 ```
-and The implementation example of `set` function is
+and The implementation example of the `set` function is
 ``` MATLAB
 set(h,'XData',xrot,'YData',yrot);
 ```
-After update the plot properties value, we can use `drawnow` to update the MATLAB figure. The result 
+After updating the plot properties value, we can use `drawnow` to update the MATLAB figure. The results are as follows
+<p align ="center">
+<img src="https://github.com/Shemesty10/Learning-drawnow-MATLAB/blob/main/RotationPoint_origin.gif" width="50%" height="50%">
+</p>
