@@ -12,7 +12,12 @@ $$x_{rot}=x\cos(\theta) - y\sin(\theta)$$
 $$y_{rot}=x\sin(\theta) + y\cos(\theta)$$
 $\theta$ is the rotation radian of the point concerning the initial position. $x_{rot}$ and $y_{rot}$ is the position of the rotated point. $x$ and $y$ is the initial position of the point.
 
-The rotated point (blue point) plot is saved in a variable, named `h`, then to update the point we use `set`. `set` is used to update the properties of the plot parameter. To change the position of the plot we can change `XData` and `YData` (To see more of the plot properties, you can call the variable in the Command Window). The following is how to write 'set' function:
+The rotated point (blue point) plot is saved in a variable, named `h`, then to update the point we use `set`. `set` is used to update the properties of the plot parameter. To change the position of the plot we can change `XData` and `YData` (To see more of the plot properties, you can call the variable in the Command Window). The following is how to write the 'set' function
 ``` MATLAB
-set(vaiabel,'properties1',value1,'properties2',value2)
+set(variable,'properties1',value1,'properties2',value2);
 ```
+and The implementation example of `set` function is
+``` MATLAB
+set(h,'XData',xrot,'YData',yrot);
+```
+After update the plot properties value, we can use `drawnow` to update the MATLAB figure.
