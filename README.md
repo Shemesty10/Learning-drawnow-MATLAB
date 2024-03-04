@@ -7,9 +7,9 @@ Using `drawnow` we could update a figure and create a data visualization animati
 In this code, I made three points which are black, red, and blue. The black point is the center of the rotation located on the origin $(0,0)$ and the red one is the initial position located on ($50,0)$. The blue one is the rotated point
 The blue point will move in a circular path. To calculate the position of the blue point we can use the Rotation Matrix as follows:
 
-$$x_{rot}=x\cos(\theta) - y\cos(\theta)$$
+$$x_{rot}=x\cos(\theta) - y\sin(\theta)$$
 
 $$y_{rot}=x\sin(\theta) + y\cos(\theta)$$
 $\theta$ is the rotation radian of the point concerning the initial position. $x_{rot}$ and $y_{rot}$ is the position of the rotated point. $x$ and $y$ is the initial position of the point.
 
-the rotated point (blue point) plot is saved in a variable, name `h`, Then to update the
+the rotated point (blue point) plot is saved in a variable, named `h`, Then to update the point 
