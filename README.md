@@ -27,6 +27,7 @@ After updating the plot properties value, we can use `drawnow` to update the MAT
 
 # [Example: Rotation Line](https://github.com/Shemesty10/Learning-drawnow-MATLAB/blob/main/RotatedLine.m)
 In this code, I made a line plot that connected 2 points (red and blue points) rotated around a black point located on the origin $(0,0)$. The red and blue points have different initial positions, the red point's initial position is located on $(2,0)$ and The blue one on $(4,0)$. To create a points plot we can use `scatter` and save the properties in the variable, named `dot1` and `dot2`.
+
 Then to create a line that connects the points we can use the `plot` function with the `X` and `Y` as the position of the rotated points (red and blue points) and save the properties in the variable, named `lines`.
 Similar to the previous section, we use the rotation equation to calculate the position of the rotated point and then use the `set` function to update each variable properties value, as seen below:
 ```
