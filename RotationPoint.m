@@ -1,7 +1,7 @@
 xx = 50;
 yy = 0;
 
-rot = linspace(0,2*pi,250)
+rot = linspace(0,2*pi,250);
 scatter(xx,yy,"filled",'r');
 grid on 
 xlim([-55 55])
